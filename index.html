@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div class="card m-5" style="width: 18rem;">
+        <img src="photos/image1.jpg" class="card-img-top image-size-1" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">nike shoe</h5>
+          <a href="#" class="btn btn-primary" onclick="showErr()">purchase - $149</a>
+          <p class="card-text text-danger" id="error"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function showErr(){
+            var x = document.getElementById("error");
+            x.innerHTML = "Something went wrong, please try again";
+        }
+    </script>
+</body>
+</html>
